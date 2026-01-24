@@ -131,3 +131,7 @@
 nextjs-portal {
     display: none;
 }
+
+button {
+    cursor: pointer;
+}

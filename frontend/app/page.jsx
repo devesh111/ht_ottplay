@@ -63,7 +63,7 @@ export default function Home() {
                         <Button variant="outline">View All</Button>
                     </Link>
                 </div>
-                {!loading ? (
+                {loading ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {[...Array(4)].map((_, i) => (
                             <div
@@ -89,7 +89,7 @@ export default function Home() {
                         <Button variant="outline">View All</Button>
                     </Link>
                 </div>
-                {!loading ? (
+                {loading ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {[...Array(4)].map((_, i) => (
                             <div

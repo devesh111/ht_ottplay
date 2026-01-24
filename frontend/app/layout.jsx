@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "@/components/layout/Providers";
+import { ThemeProvider } from "@/components/layout/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,11 +41,18 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 <Providers>
-                    <div className="flex flex-col min-h-screen">
-                        <Header />
-                        <main className="flex-1">{children}</main>
-                        <Footer />
-                    </div>
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <div className="flex flex-col min-h-screen">
+                            <Header />
+                            <main className="flex-1">{children}</main>
+                            <Footer />
+                        </div>
+                    </ThemeProvider>
                 </Providers>
             </body>
         </html>

@@ -33,7 +33,7 @@ export function Header() {
     };
 
     return (
-        <header className="bg-white shadow-sm sticky top-0 z-50">
+        <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -50,19 +50,19 @@ export function Header() {
                     <nav className="hidden md:flex items-center space-x-8">
                         <Link
                             href="/content/movies"
-                            className="text-gray-700 hover:text-blue-600"
+                            className=" hover:text-blue-300"
                         >
                             Movies
                         </Link>
                         <Link
                             href="/content/shows"
-                            className="text-gray-700 hover:text-blue-600"
+                            className=" hover:text-blue-300"
                         >
                             Shows
                         </Link>
                         <Link
                             href="/content/live-tv"
-                            className="text-gray-700 hover:text-blue-600"
+                            className=" hover:text-blue-300"
                         >
                             Live TV
                         </Link>
