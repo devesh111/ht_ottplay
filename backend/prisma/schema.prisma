@@ -110,6 +110,7 @@ model Movie {
   duration        Int
   rating          Float?
   posterUrl       String?
+  thumbnailUrl    String?
   backdropUrl     String?
   trailerUrl      String?
   director_en     String?
@@ -151,6 +152,7 @@ model Show {
   totalEpisodes   Int      @default(0)
   rating          Float?
   posterUrl       String?
+  thumbnailUrl    String?
   backdropUrl     String?
   trailerUrl      String?
   creator_en      String?

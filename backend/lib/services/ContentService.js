@@ -61,6 +61,7 @@ export const getMovies = async (options = {}) => {
     duration: movie.duration,
     rating: movie.rating,
     posterUrl: movie.posterUrl,
+    thumbnailUrl: movie.thumbnailUrl,
     backdropUrl: movie.backdropUrl,
     genre: {
       id: movie.genre.id,
@@ -128,6 +129,7 @@ export const getMovieDetail = async (identifier, language = 'en') => {
     rating: movie.rating,
     averageUserRating: avgRating,
     posterUrl: movie.posterUrl,
+    thumbnailUrl: movie.thumbnailUrl,
     backdropUrl: movie.backdropUrl,
     trailerUrl: movie.trailerUrl,
     director: getMultilingualField(movie, 'director', language),
@@ -198,6 +200,7 @@ export const getShows = async (options = {}) => {
     totalEpisodes: show.totalEpisodes,
     rating: show.rating,
     posterUrl: show.posterUrl,
+    thumbnailUrl: show.thumbnailUrl,
     genre: {
       id: show.genre.id,
       name: getMultilingualField(show.genre, 'name', language),
@@ -260,6 +263,7 @@ export const getShowDetail = async (identifier, language = 'en') => {
     totalEpisodes: show.totalEpisodes,
     rating: show.rating,
     posterUrl: show.posterUrl,
+    thumbnailUrl: show.thumbnailUrl,
     backdropUrl: show.backdropUrl,
     genre: {
       id: show.genre.id,
